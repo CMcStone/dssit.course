@@ -1,0 +1,16 @@
+README.txt
+setup.cfg
+setup.py
+dssit/__init__.py
+dssit.course.egg-info/PKG-INFO
+dssit.course.egg-info/SOURCES.txt
+dssit.course.egg-info/dependency_links.txt
+dssit.course.egg-info/entry_points.txt
+dssit.course.egg-info/namespace_packages.txt
+dssit.course.egg-info/not-zip-safe
+dssit.course.egg-info/paster_plugins.txt
+dssit.course.egg-info/requires.txt
+dssit.course.egg-info/top_level.txt
+dssit/course/__init__.py
+dssit/course/course.py
+dssit/course/tests.py

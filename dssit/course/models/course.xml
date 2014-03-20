@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<model xmlns="http://namespaces.plone.org/supermodel/schema"
+	  xmlns:security="http://namespaces.plone.org/supermodel/security"
+	  xmlns:marshal="http://namespaces.plone.org/supermodel/marshal"
+       xmlns:form="http://namespaces.plone.org/supermodel/form">
+    
+    <schema>
+	    <field name="title" type="zope.schema.TextLine">
+		    <title>Course Number</title>
+	         <description/>
+		    <required>False</required>
+	    </field>
+	    <field name="crn" type="zope.schema.TextLine">
+		    <description/>
+		    <title>CRN</title>
+		    <required>False</required>
+	    </field>
+	    <field name="quarter" type="zope.schema.Choice">
+	    		    <description/>
+	    		    <title>Quarter</title>
+	    		    <values>
+	    			    	<element>Margherita</element>
+	                	  	<element>Pepperoni</element>
+	                		<element>Hawaiian</element>
+	    			</values>
+	    		
+	    	</field>
+	    <field name="faculty" type="zope.schema.Choice" form:widget="plone.formwidget.autocomplete.AutocompleteFieldWidget">
+		    <description/>
+		    <title>Instructor</title>
+		    <vocabulary>plone.principalsource.Users</vocabulary>
+		    <required>False</required>
+	    </field>
+	    
+	    <field name="coursetitle" type="zope.schema.Text">
+		    <description/>
+		    <title>Course Title</title>
+		    <required>False</required>
+	    </field>
+	    <field name="days" type="zope.schema.TextLine">
+		    <description/>
+		    <title>Days</title>
+		    <required>False</required>
+	    </field>
+	    <field name="start" type="zope.schema.Datetime">
+		    <description/>
+		    <title>Start Time</title>
+		    <required>False</required>
+	    </field>
+	    <field name="end" type="zope.schema.Datetime">
+		    <description/>
+		    <title>End Time </title>
+		    <required>False</required>
+	    </field>
+	    <field name="location" type="zope.schema.Text">
+		    <description/>
+		    <title>Location </title>
+		    <required>False</required>
+	    </field>
+	    <field name="gereq" type="zope.schema.Text">
+		    <description/>
+		    <title>GE Credit</title>
+		    <required>False</required>
+	    </field>
+	    <field name="expanded_desc" type="plone.app.textfield.RichText">
+		    <description/>
+		    <title>Expanded Course Description </title>
+		    <required>False</required>
+	    </field>
+	    
+        
+    </schema>
+    
+</model>

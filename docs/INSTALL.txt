@@ -1,0 +1,17 @@
+dssit.course Installation
+-------------------------
+
+To install dssit.course using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``dssit.course`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        dssit.course
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
