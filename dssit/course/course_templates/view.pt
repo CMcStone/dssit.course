@@ -27,7 +27,11 @@
 	    </div>
         
 		   
-        <div class="discreet">
+        <div class="plain">
+		   <tal:block condition="context/days">
+		    <span i18ntranslate="label_days">Days:</span>
+		    <span tal:content="context/days" />
+		    </tal:block>
             <tal:block condition="context/start">
                 <span i18n:translate="label_from">From:</span>
                 <span tal:content="python:context.start.strftime('%x %X')" />
@@ -36,6 +40,13 @@
                 <span i18n:translate="label_to">To:</span>
                 <span tal:content="python:context.end.strftime('%x %X')" />
             </tal:block>
+		  <tal:block condition="context/location">
+		       <span i18n:translate="label_location">Location:</span>
+			  <span tal:content="context/location" />
+		  </tal:block>
+		  <tal:block condition="context/quarter">
+		   <span class="quarter" tal:content="context/quarter" />
+		   </tal:block>
         </div>
 
         <div tal:replace="structure provider:plone.belowcontenttitle" />
@@ -44,7 +55,7 @@
 
         <div tal:replace="structure provider:plone.abovecontentbody" />
 
-        <div >
+        <div tal:content="structure context/expanded_desc/output" />
 
         <div tal:replace="structure provider:plone.belowcontentbody" />
 

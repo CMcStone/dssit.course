@@ -14,6 +14,7 @@ from plone.namedfile.field import NamedImage, NamedFile
 from plone.namedfile.field import NamedBlobImage, NamedBlobFile
 from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.formwidget.autocomplete import AutocompleteFieldWidget
+from z3c.relationfield.schema import RelationChoice
 
 
 from dssit.course import MessageFactory as _
