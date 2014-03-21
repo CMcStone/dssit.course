@@ -29,7 +29,7 @@
 		    <description/>
 		    <title>Instructor</title>
 		    <vocabulary>plone.principalsource.Users</vocabulary>
-		    <required>False</required>
+		    <required>True</required>
 	    </field>
 	    
 	    <field name="coursetitle" type="zope.schema.Text">
