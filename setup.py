@@ -29,6 +29,7 @@ setup(name='dssit.course',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
           'plone.principalsource',
+          'plone.app.relationfield',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
