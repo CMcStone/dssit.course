@@ -25,7 +25,7 @@
 	    			</values>
 	    		
 	    	</field>
-	    <field name="faculty" type="plone.app.relationfield.RelationChoice" form:widget="plone.formwidget.autocomplete.AutocompleteFieldWidget">
+	    <field name="faculty" type="zope.schema.Choice" form:widget="plone.formwidget.autocomplete.AutocompleteFieldWidget">
 		    <description/>
 		    <title>Instructor</title>
 		    <vocabulary>plone.principalsource.Users</vocabulary>
