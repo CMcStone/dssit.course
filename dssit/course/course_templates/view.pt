@@ -5,6 +5,14 @@
       lang="en"
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="dssit.course">
+<head>
+    <metal:block fill-slot="style_slot">
+        <link rel="stylesheet" type="text/css"
+            tal:define="navroot context/@@plone_portal_state/navigation_root_url"
+            tal:attributes="href string:${navroot}/++resource++dssit.course/course.css"
+            />
+    </metal:block>
+</head>
 <body>
 
 <metal:main fill-slot="main">
@@ -13,8 +21,12 @@
 
         <div tal:replace="structure provider:plone.abovecontenttitle" />
 
-        <h1 class="documentFirstHeading" tal:content="context/title">
-
+        <div id="course_heading">
+		   <span class="course_title" tal:content="python:context.title +': '+context.coursetitle"/>
+        	<span class="instructor" tal:content="context/faculty"/>
+	    </div>
+        
+		   
         <div class="discreet">
             <tal:block condition="context/start">
                 <span i18n:translate="label_from">From:</span>
