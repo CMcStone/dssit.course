@@ -7,7 +7,7 @@
   <property name="title" i18n:translate="">Course</property>
   <property name="description"
     i18n:translate="">A College Course or Class</property>
-  <property name="icon_expr">string:${portal_url}/folder_icon.png</property>
+  <property name="icon_expr">string:${portal_url}/book_icon.png</property>
   <property name="factory">dssit.course.course</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>

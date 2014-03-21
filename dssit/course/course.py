@@ -51,7 +51,7 @@ class Course(Container):
 # of this type by uncommenting the grok.name line below or by
 # changing the view class name and template filename to View / view.pt.
 
-class View(dexterity.DisplayForm):
+class View(grok.View):
     """ sample view class """
 
     grok.context(ICourse)
